@@ -64,7 +64,8 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "oskar-zadanie-rekrutacyjne:build:production"
+              "browserTarget": "oskar-zadanie-rekrutacyjne:build:production",
+              "proxyConfig": "src/proxy.conf.json"
             },
             "development": {
               "browserTarget": "oskar-zadanie-rekrutacyjne:build:development"
@@ -97,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "cc7eb235-7698-4d2c-81b0-f303a1510a05"
   }
 }
