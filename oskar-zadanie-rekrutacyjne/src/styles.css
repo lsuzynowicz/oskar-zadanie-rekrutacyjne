@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .form-signin {
     width: 100%;
     max-width: 330px;
@@ -24,3 +25,12 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
+=======
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+>>>>>>> 4ac3b19
