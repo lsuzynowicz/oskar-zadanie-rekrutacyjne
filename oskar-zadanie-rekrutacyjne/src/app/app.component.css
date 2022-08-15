@@ -1,0 +1,33 @@
+.navbar{
+    display: flex;
+    width: 100%;
+    background-color: #52a3ff;
+    justify-content: space-around;
+    padding: 15px 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover{
+    color: rgb(231, 231, 231);
+    text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-item{
+    list-style: none;
+    padding: 0 20px;
+}
+
+.right-component{
+    display: flex;
+}
+
+.navbar-nav{
+    display: flex;
+}

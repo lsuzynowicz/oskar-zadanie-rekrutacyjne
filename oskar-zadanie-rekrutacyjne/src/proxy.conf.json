@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://dev.api.bookandgo.oskar.com.pl",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
