@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    text-align: center;
+    font-size: 18px;
+}
+
+.list-group-item{
+    padding: 8px 15px;
+}
+
+table, td, th {
+    border: 1px solid #222;
+    border-collapse: collapse;
+}
+
+table{
+    margin: 2% 0;
+    letter-spacing: 0.8px;
+}

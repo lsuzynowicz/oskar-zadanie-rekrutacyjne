@@ -26,11 +26,15 @@ export class LoginComponent implements OnInit {
     const { email, password } = this.form;
     this.authService.login(email, password).subscribe({
       next: data => {
+        this.storageService.saveToken(data.access);
+        this.storageService.saveRefreshToken(data.refresh);
+        this.storageService.saveUser(data);
         this.storageService.saveUser(data);
         this.isLoginFailed = false;
         this.isLoggedIn = true;
         this.roles = this.storageService.getUser().roles;
         console.log(data);
+        console.log(data.access);
       },
       error: err => {
         this.errorMessage = err.error.message;

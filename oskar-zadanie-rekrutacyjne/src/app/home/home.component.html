@@ -1,5 +1,31 @@
 <div class="container">
-    <header class="jumbotron">
-      <p>{{ content }}</p>
-    </header>
-  </div>
+      <table>
+        <thead>
+          <th class="list-group-item">ID</th>
+          <th class="list-group-item">Nazwa</th>
+          <th class="list-group-item">Kod</th>
+          <th class="list-group-item">Lokalizacja</th>
+          <th class="list-group-item">Lokalizacja rodzica</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let post of posts">
+            <td class="list-group-item">
+              {{ post.id }}
+            </td>
+            <td class="list-group-item">
+              {{ post.name }}
+            </td>
+            <td class="list-group-item">
+              {{ post.code }}
+            </td>
+            <td class="list-group-item">
+              {{ post.location_kind }}
+            </td>
+            <td class="list-group-item">
+              {{ post.parentLocation.name }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+</div>

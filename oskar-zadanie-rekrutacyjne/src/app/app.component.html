@@ -6,13 +6,10 @@
         <li class="nav-item">
           <a href="/home" class="nav-link" routerLink="home">Home </a>
         </li>
-        <li class="nav-item">
-          <a href="/user" class="nav-link" *ngIf="isLoggedIn" routerLink="user">User</a>
-        </li>
       </ul>
       <ul class="navbar-nav" *ngIf="!isLoggedIn">
         <li class="nav-item">
-          <a href="/login" class="nav-link" routerLink="login">Zajoguj się</a>
+          <a href="/login" class="nav-link" routerLink="login">Zaloguj się</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
