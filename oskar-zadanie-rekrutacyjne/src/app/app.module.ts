@@ -7,17 +7,21 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { httpInterceptorProviders } from './_helpers/auth.interceptor';
+import { AddingRecordComponent } from './adding-record/adding-record.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
+    AddingRecordComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]

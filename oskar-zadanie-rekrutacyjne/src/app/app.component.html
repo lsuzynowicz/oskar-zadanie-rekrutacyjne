@@ -1,10 +1,10 @@
 <div id="app">
   <nav class="navbar">
-    <a href="#" class="navbar-brand">Łukasz Suzynowicz</a>
+    <a href="#" class="navbar-brand"><img src="../assets/images/logo-oscar.png" alt="Logo Oscar"></a>
     <div class="right-component">
       <ul class="navbar-nav" routerLinkActive="active">
         <li class="nav-item">
-          <a href="/home" class="nav-link" routerLink="home">Home </a>
+          <a href="/home" class="nav-link" routerLink="home"><fa-icon [icon]="faHome"></fa-icon> </a>
         </li>
       </ul>
       <ul class="navbar-nav" *ngIf="!isLoggedIn">
@@ -14,7 +14,7 @@
       </ul>
       <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
         <li class="nav-item">
-          <a href class="nav-link" (click)="logout()">Wyloguj się</a>
+          <a href class="nav-link" (click)="logout()"><fa-icon [icon]="faArrowRightFromBracket"></fa-icon></a>
         </li>
       </ul>
     </div>

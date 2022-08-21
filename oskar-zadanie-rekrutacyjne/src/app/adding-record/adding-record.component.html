@@ -1,0 +1,22 @@
+<form class="form-group" #addrecord="ngForm" (ngSubmit)="onSubmit(addrecord.value)">
+    <h1>Wprowadź dane:</h1>
+    <label for="name">Nazwa</label>
+    <input class="form-group-item form-group-item-text" type="text" name="name" ngModel>
+    <label for="code">Kod</label>
+    <input class="form-group-item form-group-item-text" type="text" name="code" ngModel>
+    <label for="code_merlinx">Code merlinx</label>
+    <input class="form-group-item form-group-item-text" type="text" name="code_merlinx" ngModel>
+    <label for="location_kind">Rodzaj lokalizacji</label>
+    <select class="form-group-item" type="choice" name="location_kind" ngModel>
+        <option value selected>--------</option>
+        <option value="CR">Państwo</option>
+        <option value="RG">Region</option>
+        <option value="CT">Miasto</option>
+    </select>
+    <label for="parent_location">Lokalizacja rodzica</label>
+    <select class="form-group-item" type="field"  name="parent_location" ngModel>
+        <option value selected>--------</option>
+        <option *ngFor="let post of posts" value="{{post.id}}" >{{post.id}} || {{post.name }}</option>     
+    </select>
+        <button class="button" type="submit">Dodaj</button>
+</form>

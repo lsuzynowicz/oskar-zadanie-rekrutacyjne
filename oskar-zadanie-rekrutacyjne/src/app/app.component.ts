@@ -2,12 +2,15 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { StorageService } from './_services/storage.service';
 import { AuthService } from './_services/auth.service';
+import { faHome, faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  faHome = faHome;
+  faArrowRightFromBracket = faArrowRightFromBracket;
   private roles: string[] = [];
   isLoggedIn = false;
   constructor(private storageService: StorageService, private authService: AuthService) { }

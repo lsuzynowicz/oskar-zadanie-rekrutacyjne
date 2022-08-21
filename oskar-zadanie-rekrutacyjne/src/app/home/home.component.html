@@ -4,11 +4,11 @@
           <th class="list-group-item">ID</th>
           <th class="list-group-item">Nazwa</th>
           <th class="list-group-item">Kod</th>
-          <th class="list-group-item">Lokalizacja</th>
+          <th class="list-group-item">Rodzaj lokalizacji</th>
           <th class="list-group-item">Lokalizacja rodzica</th>
         </thead>
         <tbody>
-          <tr *ngFor="let post of posts">
+          <tr class="single-record" *ngFor="let post of posts">
             <td class="list-group-item">
               {{ post.id }}
             </td>
@@ -24,8 +24,11 @@
             <td class="list-group-item">
               {{ post.parentLocation.name }}
             </td>
+            <button class="trashButton" (click)="deleteRecord(post.id)"><fa-icon [icon]="faTrash"></fa-icon></button>
           </tr>
         </tbody>
       </table>
-
+        <a href="#" routerLink="../adding-record">
+          <button routerLinkActive="active" class="button" role="button">Dodaj rekord</button>
+        </a>
 </div>

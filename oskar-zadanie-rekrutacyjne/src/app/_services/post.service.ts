@@ -6,7 +6,7 @@ import { HttpClient, HttpHandler, HttpHeaders } from '@angular/common/http';
 })
 export class PostService {
   
-  private url = 'https://dev.api.bookandgo.oskar.com.pl/api/location/?limit=25&offset=100';
+  private url = 'https://dev.api.bookandgo.oskar.com.pl/api/location/';
    
   constructor(private httpClient: HttpClient) { }
   
@@ -14,6 +14,5 @@ export class PostService {
     return this.httpClient.get<any>(this.url);
   }
   
- 
 
 }

@@ -1,8 +1,10 @@
 .navbar{
     display: flex;
     width: 100%;
+    height: 30px;
+    align-items: center;
     background-color: #52a3ff;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 15px 0;
     font-size: 20px;
     letter-spacing: 2px;
@@ -21,13 +23,21 @@ a:hover, a:visited, a:link, a:active
 
 .nav-item{
     list-style: none;
-    padding: 0 20px;
+    padding-right: 30px;
 }
 
 .right-component{
     display: flex;
+    padding-right: 10px;
 }
 
 .navbar-nav{
     display: flex;
+    padding: 0;
+}
+
+.navbar-brand img{
+    height: 40px;
+    width: auto;
+    margin-left: 40px;
 }
